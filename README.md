@@ -21,16 +21,14 @@ This project is a small Playwright-based automation framework focused on page-ob
 - **Screenshots for sections:** Added for quick visual verification while selectors are still evolving.
 - **Dropdown selection by index:** The helper selects by index to avoid fragile value matching when the actual `<option>` values are unknown or unstable.
 - **No production submit:** The waitlist submit action is intentionally commented out to avoid submitting data to a live environment.
-- **Simple test data:** The waitlist test uses a single `ValidUser` object for clarity; more complex datasets can be added later.
+- **Simple test data:** The waitlist test uses a single `ValidUser` object for clarity; Additional datasets can be added later.
 
 ## Project Structure
 
 ```
 playwright-automation
 ├── src
-│   ├── Automation.Core          # Core automation functionalities
-│   ├── Automation.Pages         # Page object models
-│   └── Automation.Tests         # Test cases
+│   └── Automation.Tests         # Page objects, Test Configs, Page Extensions, and Test cases
 ├── PlaywrightAutomation.sln     # Solution file
 ├── Directory.Build.props        # Common properties for all projects
 └── README.md                    # Project documentation
